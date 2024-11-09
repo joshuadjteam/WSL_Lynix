@@ -30,6 +30,8 @@ Enter these commands
 
 apt update && apt upgrade
 
+sudo snap install firefox
+
 sudo apt install x11-apps -y
 
 sudo apt install ubuntu-desktop
@@ -124,7 +126,7 @@ Username - Not Specified (blank)
 
 Logins
 
-root - *password from line 79* - Xfce4
+root - *password from line 81* - Xfce4
 *unixusername* - *unixpasswd* - Ubuntu Desktop
 
 Rdp
