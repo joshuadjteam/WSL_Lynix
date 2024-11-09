@@ -29,30 +29,55 @@ sudo -i
 Enter these commands
 
 apt update && apt upgrade
+
 sudo apt install x11-apps -y
+
 sudo apt install ubuntu-desktop
+
 apt install xfce4 xfce4-goodies && echo On xfce4 choose gdm3 when prompted
+
 apt install xrdp -y
+
 echo "xfce4-session" | tee .xsession
+
 systemctl restart xrdp
+
 sudo apt install gedit -y
+
 sudo apt install gimp -y
+
 sudo apt install nautilus -y
+
 sudo apt install vlc -y
+
 cd /tmp
-sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.de
+
 sudo dpkg -i google-chrome-stable_current_amd64.deb 
+
 sudo apt install --fix-broken -y
+
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+
 sudo apt-get install -y nautilus gedit
+
 sudo apt-get install wget ca-certificates
+
 sudo snap install --classic code
+
 sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+
 sudo apt update
+
 sudo apt install code && echo this is Visual Studio Code
+
 sudo snap install code
+
 code
+
 passwd root
+
 ifconfig
 
 TRY VISUAL STUDIO CODE
@@ -99,7 +124,7 @@ Username - Not Specified (blank)
 
 Logins
 
-root - *password from line 55* - Xfce4
+root - *password from line 79* - Xfce4
 *unixusername* - *unixpasswd* - Ubuntu Desktop
 
 Rdp
