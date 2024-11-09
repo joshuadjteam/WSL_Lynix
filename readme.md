@@ -97,24 +97,7 @@ startxfce4
 
 and it should look like
 
-if test -r /etc/profile; then
-        . /etc/profile
-fi
-
-if test -r ~/.profile; then
-        . ~/.profile
-fi
-
-test -x /etc/X11/Xsession && exec /etc/X11/Xsession
-
-exec /bin/sh /etc/X11/Xsession
-
-#test -x /etc/X11/Xsession && exec /etc/X11/Xsession
-
-#exec /bin/sh /etc/X11/Xsession
-
-startxfce4
-
+![Screenshot 2024-11-09 125340](https://github.com/user-attachments/assets/438363ee-3705-4f56-8a68-c57c17261337)
 
 TRY VISUAL STUDIO CODE
 Now open a new terminal of ubuntu and type type
@@ -139,7 +122,9 @@ eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
 
         inet 172.26.203.xxx  netmask 255.255.240.0  broadcast 172.26.207.255
         
-        inet6 fe80::215:5dff:fe41:16b7  prefixlen 64  scopeid 0x20<link>
+        inet6 fe80::215:5dff:fe41:16b7  prefixlen 64  scopeid 0x20<link>![image_2024-11-09_125443717](https://github.com/user-attachments/assets/f9bdafb7-537e-4b9e-8d31-bd546b32c360)
+
+
         
         ether 00:15:5d:41:16:b7  txqueuelen 1000  (Ethernet)
         
