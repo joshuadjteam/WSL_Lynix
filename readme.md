@@ -102,21 +102,35 @@ Go back to the Ubuntu terminal and type ifconfig
 this is what it should look like
 
 eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+
         inet 172.26.203.xxx  netmask 255.255.240.0  broadcast 172.26.207.255
+        
         inet6 fe80::215:5dff:fe41:16b7  prefixlen 64  scopeid 0x20<link>
+        
         ether 00:15:5d:41:16:b7  txqueuelen 1000  (Ethernet)
+        
         RX packets 80062  bytes 131540988 (131.5 MB)
+        
         RX errors 0  dropped 0  overruns 0  frame 0
+        
         TX packets 8367  bytes 891242 (891.2 KB)
+        
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+
         inet 127.0.0.1  netmask 255.0.0.0
+        
         inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        
         loop  txqueuelen 1000  (Local Loopback)
+        
         RX packets 1154  bytes 138610 (138.6 KB)
+        
         RX errors 0  dropped 0  overruns 0  frame 0
+        
         TX packets 1154  bytes 138610 (138.6 KB)
+        
         TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
 
 Now on mstsc type 
