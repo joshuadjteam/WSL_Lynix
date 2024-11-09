@@ -82,8 +82,42 @@ passwd root
 
 ifconfig
 
+STOP COPYING FROM HERE (THIS IS IMPORTIANT)
+
+In here we have to start xfce4 when the pc starts... to do so go to your ubuntu terminal and type
+
+sudo nano /etc/xrdp/startwm.sh
+
+copy the last 4 codes in to the startwm.sh file
+
+#test -x /etc/X11/Xsession && exec /etc/X11/Xsession
+#exec /bin/sh /etc/X11/Xsession
+
+startxfce4
+
+and it should look like
+
+if test -r /etc/profile; then
+        . /etc/profile
+fi
+
+if test -r ~/.profile; then
+        . ~/.profile
+fi
+
+test -x /etc/X11/Xsession && exec /etc/X11/Xsession
+
+exec /bin/sh /etc/X11/Xsession
+
+#test -x /etc/X11/Xsession && exec /etc/X11/Xsession
+
+#exec /bin/sh /etc/X11/Xsession
+
+startxfce4
+
+
 TRY VISUAL STUDIO CODE
-Now open a new terminal of ubuntu and type this
+Now open a new terminal of ubuntu and type type
 
 code
 
