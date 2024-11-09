@@ -91,6 +91,7 @@ sudo nano /etc/xrdp/startwm.sh
 copy the last 4 codes in to the startwm.sh file
 
 #test -x /etc/X11/Xsession && exec /etc/X11/Xsession
+
 #exec /bin/sh /etc/X11/Xsession
 
 startxfce4
