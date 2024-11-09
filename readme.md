@@ -141,6 +141,7 @@ Username - Not Specified (blank)
 Logins
 
 root - *password from line 81* - Xfce4
+
 *unixusername* - *unixpasswd* - Ubuntu Desktop
 
 Rdp
