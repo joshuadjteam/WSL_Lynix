@@ -88,6 +88,12 @@ passwd root
 
 ifconfig
 
+echo Installation Completed
+
+echo use the IP address shown above and rdp to port 3389 or 3390
+
+echo please read the continuing to auto-enable xrdp
+
 STOP COPYING FROM HERE (THIS IS IMPORTIANT)
 
 In here we have to start xfce4 when the pc starts... to do so go to your ubuntu terminal and type
@@ -166,7 +172,7 @@ Username - Not Specified (blank)
 
 Logins
 
-root - *password from line 81* - Xfce4
+root - *password from line 87* - Xfce4
 
 *unixusername* - *unixpasswd* - Ubuntu Desktop
 
