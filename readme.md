@@ -30,6 +30,12 @@ Enter these commands
 
 apt update && apt upgrade
 
+sudo snap install discord
+
+sudo snap install brave
+
+sudo apt install cinnamon -y
+
 sudo snap install firefox
 
 sudo apt install x11-apps -y
