@@ -28,7 +28,9 @@ sudo -i
 
 Enter these commands
 
-apt update && apt upgrade
+echo This requires an Admin account... use sudo -i to load the superuser
+
+sudo apt update && apt upgrade
 
 sudo snap install discord
 
@@ -42,11 +44,11 @@ sudo apt install x11-apps -y
 
 sudo apt install ubuntu-desktop
 
-apt install xfce4 xfce4-goodies && echo On xfce4 choose gdm3 when prompted
+sudo apt install xfce4 xfce4-goodies && echo On xfce4 choose gdm3 when prompted
 
-apt install xrdp -y
+sudo apt install xrdp -y
 
-echo "xfce4-session" | tee .xsession
+sudo echo "xfce4-session" | tee .xsession
 
 systemctl restart xrdp
 
@@ -58,11 +60,15 @@ sudo apt install nautilus -y
 
 sudo apt install vlc -y
 
+sudo apt install yum
+
+sudo apt install dnf
+
 cd /tmp
 
 sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.de
 
-sudo dpkg -i google-chrome-stable_current_amd64.deb 
+sudo dpkg -i google-chrome-stable_current_amd64.deb
 
 sudo apt install --fix-broken -y
 
@@ -82,21 +88,43 @@ sudo apt install code && echo this is Visual Studio Code
 
 sudo snap install code
 
-code
-
 passwd root
 
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | gpg --dearmor | sudo tee /etc/apt/trusted.gpg.d/sublimehq-archive.gpg > /dev/null
 
 echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
 
-apt update && apt upgrade 
-
 sudo apt-get install apt-transport-https
 
 sudo apt-get install sublime-text
 
+sudo apt install curl ca-certificates -y
+
+curl -s https://repo.waydro.id | sudo bash
+
+sudo apt install waydroid -y
+
+sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-1.0:i386
+
+sudo yum install zlib.i686 ncurses-libs.i686 bzip2-libs.i686
+
+sudo wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2024.2.1.11/android-studio-2024.2.1.11-linux.tar.gz
+
+mkdir ADB_DOWNLOAD
+
+tar -xvzf android-studio-2024.2.1.11-linux.tar.gz -C ADB_DOWNLOAD
+
+cd ADB_DOWNLOAD
+
+cd android-studio/bin
+
+chmod +x ./studio.sh
+
+./studio.sh
+
 ifconfig
+
+cd 
 
 echo Installation Completed
 
@@ -104,13 +132,31 @@ echo use the IP address shown above and rdp to port 3389 or 3390
 
 echo please read the continuing to auto-enable xrdp
 
+echo to run Android Studio run cd /tmp/ADB_DOWNLOAD/android-studio/bin && ./studio.sh
+
+echo on powershell run  wsl --shutdown & wsl.exe
+
 STOP COPYING FROM HERE (THIS IS IMPORTIANT)
+
+Finish the setup in Android Studio
+
+When your in Android Studio, Click the setting icon and choose "Create Desktop Entry" and choose "create the entry for all users ((requires superuser privillages))
+
+______________________________________________________Fix xRDP___
+
+Reboot your WSL by going to powershell
+
+wsl.exe --shutdown
+
+wsl.exe
+
+________________________________________________XFCE4____________
 
 In here we have to start xfce4 when the pc starts... to do so go to your ubuntu terminal and type
 
 sudo nano /etc/xrdp/startwm.sh
 
-copy the last 4 codes in to the startwm.sh file
+**copy the last 4 codes in to the startwm.sh file***
 
 #test -x /etc/X11/Xsession && exec /etc/X11/Xsession
 
@@ -122,7 +168,7 @@ and it should look like
 
 ![Screenshot 2024-11-09 125340](https://github.com/user-attachments/assets/438363ee-3705-4f56-8a68-c57c17261337)
 
-TRY VISUAL STUDIO CODE
+___________________________________TRY VISUAL STUDIO CODE__________
 Now open a new terminal of ubuntu and type type
 
 code
@@ -131,13 +177,17 @@ When prompted enter (Y)
 
 
 
-TEST
+________________________________________________TEST_______________
 After the installation with these apps Open file explorer and go to this location
 
 %USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Ubuntu
 
 And now press (Windows + R) and type mstsc 
-Go back to the Ubuntu terminal and type ifconfig
+Go back to the Ubuntu terminal and type 
+
+________________________________________________RDP________________
+
+ifconfig
 
 this is what it should look like
 
@@ -182,11 +232,11 @@ Username - Not Specified (blank)
 
 Logins
 
-root - *password from line 87* - Xfce4
+root - *password from line 91* - Xfce4
 
-*unixusername* - *unixpasswd* - Ubuntu Desktop
+*unixusername* - *unixpasswd* - Xfce4
 
-Rdp
+Finish UP
 
 when you need to RDP to Ubuntu you can use Lynix
 back in mstsc choose the show options & Connections Settings
