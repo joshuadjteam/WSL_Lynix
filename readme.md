@@ -30,6 +30,8 @@ Enter these commands
 
 echo This requires an Admin account... use sudo -i to load the superuser
 
+echo THIS REQUIRES A SUPERUSER ACCOUNT!!!!
+
 sudo apt update && apt upgrade
 
 sudo snap install discord
@@ -66,7 +68,7 @@ sudo apt install dnf
 
 cd /tmp
 
-sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.de
 
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
@@ -108,6 +110,8 @@ sudo apt-get install libc6:i386 libncurses5:i386 libstdc++6:i386 lib32z1 libbz2-
 
 sudo yum install zlib.i686 ncurses-libs.i686 bzip2-libs.i686
 
+cd /
+
 sudo wget https://redirector.gvt1.com/edgedl/android/studio/ide-zips/2024.2.1.11/android-studio-2024.2.1.11-linux.tar.gz
 
 mkdir ADB_DOWNLOAD
@@ -124,7 +128,7 @@ chmod +x ./studio.sh
 
 ifconfig
 
-cd 
+cd
 
 echo Installation Completed
 
@@ -132,9 +136,19 @@ echo use the IP address shown above and rdp to port 3389 or 3390
 
 echo please read the continuing to auto-enable xrdp
 
-echo to run Android Studio run cd /tmp/ADB_DOWNLOAD/android-studio/bin && ./studio.sh
+echo to run Android Studio run cd /usr/adb/android-studio/bin && ./studio.sh
 
-echo on powershell run  wsl --shutdown & wsl.exe
+echo on powershell run wsl --shutdown & wsl.exe
+
+ifconfig
+
+echo Installation Completed
+
+echo use the IP address shown above and rdp to port 3389 or 3390
+
+echo please read the continuing to auto-enable xrdp
+
+echo some packages are not installed... look at the WSL_Lynix.txt file to do a complete install
 
 STOP COPYING FROM HERE (THIS IS IMPORTIANT)
 
