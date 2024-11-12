@@ -60,6 +60,22 @@ sudo apt install gimp -y
 
 sudo apt install nautilus -y
 
+wget -O - https://dl.winehq.org/wine-builds/winehq.key | sudo apt-key add -
+
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ jammy main'
+
+sudo apt install --install-recommends winehq-stable
+
+sudo apt upgrade winehq-stable
+
+sudo dpkg --add-architecture i386
+
+sudo apt install wine64 -y
+
+sudo apt install wine32:i386
+
+sudo apt install libwine -y
+
 sudo apt install vlc -y
 
 sudo apt install yum
@@ -246,7 +262,7 @@ Username - Not Specified (blank)
 
 Logins
 
-root - *password from line 91* - Xfce4
+root - *password from line 109* - Xfce4
 
 *unixusername* - *unixpasswd* - Xfce4
 
