@@ -86,7 +86,7 @@ sudo apt install dnf
 
 cd /tmp
 
-sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.de
+sudo wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 
@@ -148,9 +148,9 @@ mkdir /usr/dwnlds
 
 cd /usr/dwnlds
 
-sudo wget https://net.geo.opera.com/opera_gx/stable/windows?utm_tryagain=yes&utm_source=google&utm_medium=pa&utm_campaign=OGX_CA_Search_EN_T1_Brand_V2&utm_content=634259713869&utm_id=Cj0KCQiAlsy5BhDeARIsABRc6ZsMiKwnyQlwQV3lIzM1J3b5ksS8D2a9afTY_oCpeDlOS3QYggT48AAaAtVoEALw_wcB&http_referrer=https%3A%2F%2Fwww.google.com%2F&utm_site=opera_com&&utm_lastpage=opera.com/gx-browser&utm_id=Cj0KCQiAlsy5BhDeARIsABRc6ZsMiKwnyQlwQV3lIzM1J3b5ksS8D2a9afTY_oCpeDlOS3QYggT48AAaAtVoEALw_wcB
+wget https://get.opera.com/ftp/pub/opera_gx/114.0.5282.159/win/Opera_GX_114.0.5282.159_Setup.exe
 
-wine /usr/dwnlds/OperaGXSetup.exe
+wine /usr/dwnlds/Opera_GX_114.0.5282.159_Setup.exe
 
 ifconfig
 
