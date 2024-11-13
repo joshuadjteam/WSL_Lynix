@@ -3,6 +3,8 @@ Hello guys!
 Here at DJTeam we've been working on Lynix to Linux (Work in progress with WSL) and its a sucess!
 To Buy the New version (1.2.1a) goto https://lynixity.x10.bz/
 
+For a Video... goto 
+
 REQUIRED ITEMS
 - Intel Vt-x or AMD V
 - Windows 10 or higher
