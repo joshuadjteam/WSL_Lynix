@@ -142,6 +142,14 @@ chmod +x ./studio.sh
 
 ./studio.sh
 
+mkdir /usr/dwnlds
+
+cd /usr/dwnlds
+
+sudo wget https://net.geo.opera.com/opera_gx/stable/windows?utm_tryagain=yes&utm_source=google&utm_medium=pa&utm_campaign=OGX_CA_Search_EN_T1_Brand_V2&utm_content=634259713869&utm_id=Cj0KCQiAlsy5BhDeARIsABRc6ZsMiKwnyQlwQV3lIzM1J3b5ksS8D2a9afTY_oCpeDlOS3QYggT48AAaAtVoEALw_wcB&http_referrer=https%3A%2F%2Fwww.google.com%2F&utm_site=opera_com&&utm_lastpage=opera.com/gx-browser&utm_id=Cj0KCQiAlsy5BhDeARIsABRc6ZsMiKwnyQlwQV3lIzM1J3b5ksS8D2a9afTY_oCpeDlOS3QYggT48AAaAtVoEALw_wcB
+
+wine /usr/dwnlds/OperaGXSetup.exe
+
 ifconfig
 
 cd
@@ -205,15 +213,7 @@ Then exit by pressing (esc) and then (:q) (enter)
 
 startxfce4
 
-____________________________________Opera Setup (windows wine)_______________________
 
-mkdir /usr/dwnlds
-
-cd /usr/dwnlds
-
-sudo wget https://net.geo.opera.com/opera_gx/stable/windows?utm_tryagain=yes&utm_source=google&utm_medium=pa&utm_campaign=OGX_CA_Search_EN_T1_Brand_V2&utm_content=634259713869&utm_id=Cj0KCQiAlsy5BhDeARIsABRc6ZsMiKwnyQlwQV3lIzM1J3b5ksS8D2a9afTY_oCpeDlOS3QYggT48AAaAtVoEALw_wcB&http_referrer=https%3A%2F%2Fwww.google.com%2F&utm_site=opera_com&&utm_lastpage=opera.com/gx-browser&utm_id=Cj0KCQiAlsy5BhDeARIsABRc6ZsMiKwnyQlwQV3lIzM1J3b5ksS8D2a9afTY_oCpeDlOS3QYggT48AAaAtVoEALw_wcB
-
-wine /usr/dwnlds/OperaGXSetup.exe
 
 
 ___________________________________TRY VISUAL STUDIO CODE__________
