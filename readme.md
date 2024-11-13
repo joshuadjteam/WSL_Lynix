@@ -144,6 +144,10 @@ chmod +x ./studio.sh
 
 ./studio.sh
 
+apt install winetricks -y
+
+winetricks --self-update
+
 mkdir /usr/dwnlds
 
 cd /usr/dwnlds
