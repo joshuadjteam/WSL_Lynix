@@ -289,11 +289,25 @@ Logins
 root - *password from line 109* - Xfce4
 
 *unixusername* - *unixpasswd* - Xfce4
-
-Finish UP
-
-when you need to RDP to Ubuntu you can use Lynix
+________WRAP UP______________________
 back in mstsc choose the show options & Connections Settings
+
 Choose Save as and save it in the Lynixity Folder!
+
+___OPTIONAL - RDP FROM ANYWHERE WITH GOOGLE RDP____
+
+So this is optional but IF you need the computer for anywhere or its a server... We need to (optionally) make it usable
+
+1. Goto https://remotedesktop.google.com/access/ on the host (if the host is a server, continue on client)
+2. Select "Setup via SSH"
+3. Select "Begin"
+4. Skip the download
+5. Choose Debain linux and copy the command
+
+Enter this on your cmd
+
+wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
+      
+      the command from Google CRD
 
 Thats it!
