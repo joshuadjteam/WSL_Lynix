@@ -307,9 +307,13 @@ So this is optional but IF you need the computer for anywhere or its a server...
 Enter this on your cmd
 
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
-      
+
+sudo apt install ./chrome-remote-desktop_current_amd64.deb -y
+
+sudo apt install -f
+
 the command from Google CRD
 
-Then at the end change it to (WSL) instead of (hostname)
+Then at the end change it to WSL instead of (hostname)
 
 Thats it!
