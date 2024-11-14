@@ -308,6 +308,8 @@ Enter this on your cmd
 
 wget https://dl.google.com/linux/direct/chrome-remote-desktop_current_amd64.deb
       
-      the command from Google CRD
+the command from Google CRD
+
+Then at the end change it to (WSL) instead of (hostname)
 
 Thats it!
