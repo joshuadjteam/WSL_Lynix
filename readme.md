@@ -152,10 +152,6 @@ mkdir /usr/dwnlds
 
 cd /usr/dwnlds
 
-wget https://get.opera.com/ftp/pub/opera_gx/114.0.5282.159/win/Opera_GX_114.0.5282.159_Setup.exe
-
-wine /usr/dwnlds/Opera_GX_114.0.5282.159_Setup.exe
-
 ifconfig
 
 cd
