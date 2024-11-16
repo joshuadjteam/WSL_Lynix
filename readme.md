@@ -144,6 +144,10 @@ chmod +x ./studio.sh
 
 ./studio.sh
 
+sudo apt-get install lubuntu-desktop  
+
+
+
 apt install winetricks -y
 
 sudo apt install net-tools
