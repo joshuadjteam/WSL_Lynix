@@ -146,6 +146,8 @@ chmod +x ./studio.sh
 
 apt install winetricks -y
 
+sudo apt install net-tools
+
 winetricks --self-update -y
 
 mkdir /usr/dwnlds
